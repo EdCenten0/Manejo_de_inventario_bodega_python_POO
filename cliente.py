@@ -8,3 +8,5 @@ class cliente(Persona):
 
     def __init__(self):
         self.id_cliente
+
+    
