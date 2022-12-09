@@ -1,5 +1,8 @@
 import os
 import time
+from nodo import Node
+from linked_list import Linked_list
+from cliente import Cliente
 
 def clientes():
     os.system("clear")
@@ -10,7 +13,7 @@ def clientes():
     if(opc == 1):
         print
     elif(opc == 2):
-        print
+        print   
     elif(opc == 3):
         print
     elif(opc == 4):
@@ -24,6 +27,7 @@ def clientes():
     
 
 def main():
+    
     print("Menu")
     opc = 1
     while(opc > 0 and opc < 5 and opc != 4):
