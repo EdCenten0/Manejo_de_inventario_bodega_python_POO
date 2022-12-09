@@ -11,9 +11,11 @@ def clientes():
     print("1. Agregar un cliente\n2. Leer los clientes\n3. Editar un cliente\n4. Eliminar un cliente\n5. Salir")
     opc = int(input())
     if(opc == 1):
-        print
+        cliente = Cliente()
+        cliente.agregarCliente()
+        
     elif(opc == 2):
-        print   
+        print
     elif(opc == 3):
         print
     elif(opc == 4):
