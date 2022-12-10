@@ -4,6 +4,7 @@ from linked_list import Linked_list
 class Cliente(Persona):
     id_cliente = str
     lista_cliente =  Linked_list()
+    
 
     def __init__(self, id_cliente):
         self.id_cliente = id_cliente
@@ -20,7 +21,7 @@ class Cliente(Persona):
 
 
     def agregarCliente(self):
-        clientes = []
+        
         
         print("Ingrese el nombre del cliente a agregar: ")
         self.nombre = input()
@@ -36,10 +37,12 @@ class Cliente(Persona):
         self.agregar_clientes_lista(self.nombre, self.cedula, self.numero_telefonico, self.edad, self.id_cliente)
     
 
-    def leerClientes():
-        print
+    def leerClientes(self):
+        cadena_de_nombres = self.lista_cliente.__str__()
+        return cadena_de_nombres
+
     
-    def eliminarClientes():
+    def eliminarClientes(self):
         print
 
 

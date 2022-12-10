@@ -4,6 +4,8 @@ from nodo import Node
 from linked_list import Linked_list
 from cliente import Cliente
 
+cliente = Cliente()
+
 def clientes():
     os.system("clear")
     print("Que desea hacer?: ")
@@ -11,11 +13,9 @@ def clientes():
     print("1. Agregar un cliente\n2. Leer los clientes\n3. Editar un cliente\n4. Eliminar un cliente\n5. Salir")
     opc = int(input())
     if(opc == 1):
-        cliente = Cliente()
-        cliente.agregarCliente()
-        
+        cliente.agregarCliente() 
     elif(opc == 2):
-        print
+        print(cliente.leerClientes())
     elif(opc == 3):
         print
     elif(opc == 4):

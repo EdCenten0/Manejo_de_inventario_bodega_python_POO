@@ -38,13 +38,19 @@ class Linked_list:
         return self.Size
     
     def __str__(self):
-        string = "["
+        string = "\n"
         current = self.First
+        conteo = 0
         for i in range(len(self)):
+            if(i%5==0 or i == 0):
+                
+                conteo += 1
+                string += "\nCliente " + str(conteo) + ":\n"
+                
             string += str(current)
             if i != len(self) - 1:
                 string += str(", ")
             current = current.next
-        string += "]"
+        
 
         return string
