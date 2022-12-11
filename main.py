@@ -16,6 +16,7 @@ def clientes():
         cliente.agregarCliente() 
     elif(opc == 2):
         print(cliente.leerClientes())
+        input("Presione enter para continuar")
     elif(opc == 3):
         print
     elif(opc == 4):
@@ -33,6 +34,7 @@ def main():
     print("Menu")
     opc = 1
     while(opc > 0 and opc < 5 and opc != 4):
+        os.system("clear")
         print("Que desea hacer?: ")
         print("1. Clientes\n2. Empleados\n3. Productos\n4. Salir")
         opc = int(input())
@@ -40,7 +42,7 @@ def main():
             clientes()
         elif():
             print()
-
+        
     
 
 if __name__ == "__main__":

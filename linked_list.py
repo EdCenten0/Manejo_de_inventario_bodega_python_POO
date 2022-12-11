@@ -38,7 +38,7 @@ class Linked_list:
         return self.Size
     
     def __str__(self):
-        string = "\n"
+        string = "------------------------------------------------"
         current = self.First
         conteo = 0
         for i in range(len(self)):
@@ -52,5 +52,6 @@ class Linked_list:
                 string += str(", ")
             current = current.next
         
+        string += str("\n------------------------------------------------")
 
         return string

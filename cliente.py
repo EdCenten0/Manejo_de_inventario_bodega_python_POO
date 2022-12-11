@@ -1,5 +1,7 @@
 from persona import Persona
 from linked_list import Linked_list
+import os
+import time
 
 class Cliente(Persona):
     id_cliente = str
@@ -38,8 +40,10 @@ class Cliente(Persona):
     
 
     def leerClientes(self):
+        os.system("clear")
         cadena_de_nombres = self.lista_cliente.__str__()
         return cadena_de_nombres
+        
 
     
     def eliminarClientes(self):
